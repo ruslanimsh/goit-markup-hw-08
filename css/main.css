@@ -492,10 +492,6 @@ body {
   margin-bottom: 32px;
 }
 
-.mob-menu-item:last-child {
-  margin-bottom: 302px;
-}
-
 .mob-menu-link {
   font-size: 40px;
   line-height: 1.17;
