@@ -1,0 +1,100 @@
+.hero{
+    background-color: #2F303A;
+    background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(/images/hero\ mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 15px ;
+    @include mobile {
+        padding: 118px 60px;
+        @include retina  {
+            background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(/images/Hero\ mob\ 2x.jpg);
+        }
+    }
+    
+    @include tablet {
+        padding: 118px 204px ;
+        background-image:linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(/images/hero\ tablet.jpg);
+        @include retina  {
+            background-image:linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), 
+                url(/images/Hero\ tablet\ 2x.jpg);
+        }
+    }
+    @include desktop {
+        max-width: 1600px;
+        padding-top: 195px;
+        padding-bottom: 205px; 
+        background-image:linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/hero.jpg);
+        @include retina  {
+            background-image:linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), 
+                url(/images/hero\ dest\ 2x.jpg);
+        }
+    }
+    
+    
+     
+}
+.hero__titel{
+    margin-bottom: 30px;
+    margin-top: 0;
+    max-width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    color:var(--primari-white-color);
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    @include mobile {
+        max-width: 360px;
+        font-size: 26px;
+        line-height: 1.62;
+    }
+    @include desktop {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
+}
+.hero__button{
+    color: var(--titel-text-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 152px;
+    cursor: pointer;
+    font-family: Roboto,sans-serif;
+    text-align: center;
+    
+}
+
+.hero__button.hero__button--primary{
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    border: transparent;
+}
