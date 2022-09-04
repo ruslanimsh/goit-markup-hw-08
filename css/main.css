@@ -34,17 +34,28 @@ body {
 }
 
 .sct {
-  padding-bottom: 0;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .sct {
+    padding-bottom: 0;
+  }
 }
 
 .section__titel {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--titel-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section__titel {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -197,6 +208,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
   margin-bottom: 12px;
+}
+@media screen and (max-width: 480px) {
+  .modal-title {
+    font-size: 16px;
+  }
 }
 
 .form-input {
@@ -508,6 +524,7 @@ body {
 }
 
 .mob-menu-link {
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   text-align: left;
@@ -521,6 +538,7 @@ body {
 }
 
 .mob-menu-contact__link {
+  font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196F3;
@@ -538,6 +556,7 @@ body {
 }
 
 .mob-menu-mail {
+  font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
@@ -583,6 +602,7 @@ body {
 }
 
 .mob-menu-soc__link {
+  font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
@@ -1305,9 +1325,8 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1395,13 +1414,18 @@ address {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px 8px;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .filter {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filter {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1409,6 +1433,7 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 50px;
   }
 }
 .filter .switch {

@@ -2,14 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px 8px;
+    @include mobile{
+        margin-bottom: 40px;
+    }
     @include tablet{
         justify-content: center;
+        margin-bottom: 30px;
     }
     @include desktop{
         justify-content: center;
+        margin-bottom: 50px;
     }
     
-    margin-bottom: 50px;
+    
     & .switch{
     color: var(--titel-text-color);
     }
