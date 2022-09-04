@@ -533,6 +533,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 48px;
 }
 
 .mob-soc-item {
