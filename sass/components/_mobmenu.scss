@@ -75,11 +75,16 @@
     
 }
 .mob-soc-item{
-    margin-right: 20px;
+    margin-right: 10px;
+   
     
 }
 .mob-soc-item:last-child{
     margin-right: 0;
+}
+.mob-soc-item:not(:last-child){
+     border-right: 1px solid rgba(33, 33, 33, 0.2);
+     padding-right: 10px;
 }
 .mob-menu-soc__link{
     font-size: 18px;
