@@ -13,9 +13,14 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms linear;
+    
     @media screen and (max-width: 1200px){
         min-width: 450px;
         min-height: 609px;
+    }
+    @media screen and (max-width: 480px){
+        min-width: 300px;
+        min-height: 500px;
     }
     @include desktop{
         min-width: 528px;
@@ -163,7 +168,13 @@
    }
 }
 .check-text{
-    font-size: 12px;
+    
+    @media screen and (max-width: 1200px){
+        font-size: 12px;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 6px;
+    }
     @include desktop {
          font-size: 14px;
     }

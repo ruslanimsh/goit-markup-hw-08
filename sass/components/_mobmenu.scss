@@ -51,14 +51,26 @@
     color: var(--accent-color);
 }
 .mob-menu-contact__link{
-    font-size: 34px;
+    @media screen and (max-width: 768px){
+        font-size: 34px;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 22px;
+    }
+    
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #2196F3;
     text-decoration: none;
 }
 .mob-menu-mail{
-    font-size: 24px;
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 14px;
+    }
+    
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: #757575;
@@ -88,7 +100,12 @@
      padding-right: 10px;
 }
 .mob-menu-soc__link{
-    font-size: 18px;
+    @media screen and (max-width: 768px){
+        font-size: 18px;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 12px;
+    }
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
